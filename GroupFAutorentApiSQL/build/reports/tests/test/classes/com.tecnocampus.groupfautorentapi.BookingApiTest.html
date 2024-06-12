@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BookingApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BookingApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tecnocampus.groupfautorentapi.html">com.tecnocampus.groupfautorentapi</a> &gt; BookingApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.844s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBookingCancellationLessThan24HoursBeforeStart()</td>
+<td class="success">0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBookingCancellationWithinAllowedTimeframe()</td>
+<td class="success">0.054s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testBookingWithPastStartDate()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCarAvailabilityOverlap()</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCarPickup()</td>
+<td class="success">0.103s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCarReturn()</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testCarReturnLowerDamage()</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidBookingExceedsMaxDays()</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidBookingInvalidCar()</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPricingCalculationEconomy()</td>
+<td class="success">0.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPricingCalculationFamily()</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPricingCalculationLuxury()</td>
+<td class="success">0.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPricingCalculationMini()</td>
+<td class="success">1.210s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testValidBooking()</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:33:01.053 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tecnocampus.groupfautorentapi.BookingApiTest]: BookingApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:33:01.210 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tecnocampus.groupfautorentapi.GroupFAutorentApiApplication for test class com.tecnocampus.groupfautorentapi.BookingApiTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-06-09T19:33:01.674+02:00  WARN 14116 --- [GroupFAutorentApi] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/dvsam/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/dvsam/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-06-09T19:33:01.691+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] c.t.groupfautorentapi.BookingApiTest     : Starting BookingApiTest using Java 21.0.2 with PID 14116 (started by dvsam in C:\Users\dvsam\Desktop\Uni2\software\git\group-project-autorent-grupf\GroupFAutorentApi)
+2024-06-09T19:33:01.693+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] c.t.groupfautorentapi.BookingApiTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-06-09T19:33:02.603+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-06-09T19:33:02.636+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JDBC repository interfaces.
+2024-06-09T19:33:03.129+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-09T19:33:03.388+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37af24cb
+2024-06-09T19:33:03.391+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-09T19:33:05.354+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-09T19:33:05.355+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-09T19:33:05.356+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-06-09T19:33:05.391+02:00  INFO 14116 --- [GroupFAutorentApi] [    Test worker] c.t.groupfautorentapi.BookingApiTest     : Started BookingApiTest in 3.996 seconds (process running for 5.389)
+{&quot;customerId&quot;:&quot;df0ad942-3680-4a28-a840-807b5fd5100b&quot;,&quot;carId&quot;:&quot;217b76ba-b729-4897-a6d8-c92fb6f604e9&quot;,&quot;firstDate&quot;:&quot;2024-06-11T00:00:00&quot;,&quot;finalDate&quot;:&quot;2024-06-16T00:00:00&quot;,&quot;purchaseDate&quot;:&quot;2024-06-09T00:00:00&quot;,&quot;status&quot;:&quot;CONFIRMED&quot;,&quot;id&quot;:&quot;8cbcc139-879a-4aad-8c4a-115ac12ebfe3&quot;,&quot;rental&quot;:202.5,&quot;deposit&quot;:500.0}
+com.tecnocampus.groupfautorentapi.application.dto.CustomerDTO@70ad0854
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\dvsam\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.13\979ce25f7d3096a2e82214ba7dc972a05ce7a171\byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at 9 jun 2024, 19:33:07</p>
+</div>
+</div>
+</body>
+</html>
